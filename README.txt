@@ -1,5 +1,8 @@
 AWILO FOR UGENYA MP — STATIC WEBSITE
 
+TWO-IN-ONE STRUCTURE
+The Willis Ouma Ondiek Foundation is the main homepage. The AWILO political campaign is available at campaign/index.html and through the gold campaign gateway. The two initiatives have deliberately separate visual identities, content and calls to action.
+
 Open index.html to preview the website locally.
 
 GITHUB PAGES
