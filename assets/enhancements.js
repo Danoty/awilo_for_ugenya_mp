@@ -2,35 +2,69 @@
   'use strict';
   const languages = [
     ['en', 'English'], ['sw', 'Kiswahili'], ['luo', 'Dholuo'],
-    ['fr', 'Français'], ['ar', 'العربية'], ['es', 'Español'],
-    ['de', 'Deutsch'], ['pt', 'Português'], ['hi', 'हिन्दी'], ['zh-CN', '中文']
+    ['fr', 'French'], ['ar', 'Arabic'], ['es', 'Spanish'],
+    ['de', 'German'], ['pt', 'Portuguese'], ['hi', 'Hindi'], ['zh-CN', 'Chinese']
   ];
-  const wrap = document.createElement('div');
-  wrap.className = 'language-control';
+
+  const translatorHost = document.createElement('div');
+  translatorHost.id = 'google_translate_element';
+  translatorHost.setAttribute('aria-hidden', 'true');
+  document.body.append(translatorHost);
+
+  const control = document.createElement('div');
+  control.className = 'language-control notranslate';
+  control.setAttribute('translate', 'no');
   const label = document.createElement('label');
-  label.setAttribute('for', 'site-language');
+  label.htmlFor = 'site-language';
   label.textContent = 'Language';
   const select = document.createElement('select');
   select.id = 'site-language';
-  select.setAttribute('aria-label', 'Translate this page');
+  select.setAttribute('aria-label', 'Translate this page without leaving the website');
+  const status = document.createElement('span');
+  status.className = 'translation-status sr-only';
+  status.setAttribute('aria-live', 'polite');
   languages.forEach(([code, name]) => {
     const option = document.createElement('option');
     option.value = code;
     option.textContent = name;
     select.append(option);
   });
-  select.addEventListener('change', () => {
-    if (select.value === 'en') return;
-    const isPublished = /^https?:$/.test(window.location.protocol) && !/^(localhost|127\.0\.0\.1)$/.test(window.location.hostname);
-    let sourceUrl = window.location.href;
-    if (!isPublished) {
-      const normalized = window.location.pathname.replace(/\\/g, '/');
-      const section = normalized.match(/\/(campaign|foundation)\/[^?#]*/i);
-      sourceUrl = `https://willisondiekfoundation.org${section ? section[0] : '/'}`;
+  control.append(label, select, status);
+  document.body.append(control);
+
+  const setLanguage = (code, attempts = 0) => {
+    const googleSelect = document.querySelector('.goog-te-combo');
+    if (!googleSelect && attempts < 40) {
+      status.textContent = 'Loading translation';
+      window.setTimeout(() => setLanguage(code, attempts + 1), 250);
+      return;
     }
-    const translated = `https://translate.google.com/translate?sl=en&tl=${encodeURIComponent(select.value)}&u=${encodeURIComponent(sourceUrl)}`;
-    window.location.assign(translated);
+    if (!googleSelect) {
+      status.textContent = 'Translation is temporarily unavailable. Please try again.';
+      select.value = 'en';
+      return;
+    }
+    googleSelect.value = code === 'en' ? '' : code;
+    googleSelect.dispatchEvent(new Event('change', { bubbles: true }));
+    status.textContent = code === 'en' ? 'Showing English' : `Translating to ${select.selectedOptions[0].textContent}`;
+  };
+  select.addEventListener('change', () => setLanguage(select.value));
+
+  window.googleTranslateElementInit = () => {
+    if (!window.google?.translate?.TranslateElement) return;
+    new window.google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: languages.map(([code]) => code).filter(code => code !== 'en').join(','),
+      autoDisplay: false
+    }, 'google_translate_element');
+  };
+
+  const googleScript = document.createElement('script');
+  googleScript.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+  googleScript.async = true;
+  googleScript.referrerPolicy = 'no-referrer-when-downgrade';
+  googleScript.addEventListener('error', () => {
+    status.textContent = 'Translation is temporarily unavailable. Please try again later.';
   });
-  wrap.append(label, select);
-  document.body.append(wrap);
+  document.head.append(googleScript);
 })();

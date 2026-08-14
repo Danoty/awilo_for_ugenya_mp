@@ -2,3 +2,9 @@
 /* Keep language access clear of WhatsApp and chat widgets. */
 .language-control{position:fixed!important;left:14px!important;right:auto!important;bottom:14px!important;top:auto!important;z-index:2147483647!important;isolation:isolate;display:flex!important;visibility:visible!important;opacity:1!important;pointer-events:auto!important;padding:9px 11px!important;border:2px solid #173f34!important;border-radius:9px!important}
 .language-control select{position:relative;z-index:1;cursor:pointer;pointer-events:auto!important;padding:7px!important;max-width:135px!important}
+/* In-page translation keeps the original site design intact. */
+#google_translate_element{position:fixed!important;left:-10000px!important;top:auto!important;width:1px!important;height:1px!important;overflow:hidden!important}
+.goog-te-banner-frame.skiptranslate,.goog-te-gadget-icon,.goog-te-balloon-frame{display:none!important}
+body{top:0!important}
+html.translated-ltr,html.translated-rtl{margin-top:0!important}
+.translation-status{position:absolute!important}
