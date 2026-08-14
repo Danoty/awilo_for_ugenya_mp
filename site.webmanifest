@@ -1,0 +1,11 @@
+{
+  "name": "Willis Ouma Ondiek Foundation",
+  "short_name": "WOO Foundation",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6f1e7",
+  "theme_color": "#173f34",
+  "icons": [
+    {"src": "/assets/favicon.png", "sizes": "512x512", "type": "image/png"}
+  ]
+}
