@@ -5,3 +5,9 @@ header{background:#fffefcf7!important;border-bottom:1px solid #dfe5e0}header nav
 .foundation-logo-footer img{width:min(330px,100%);height:auto;border-radius:4px}
 @media(max-width:1080px){.foundation-logo img{height:62px;max-width:245px}}
 @media(max-width:620px){.foundation-logo img{height:54px;max-width:210px}}
+/* Critical logo containment: prevents intrinsic image dimensions from escaping the navigation. */
+header nav.wrap>a.logo.foundation-logo{width:clamp(165px,20vw,240px)!important;height:72px!important;max-height:72px!important;overflow:hidden!important;contain:layout paint!important}
+header nav.wrap>a.logo.foundation-logo>img{display:block!important;width:100%!important;height:100%!important;max-width:240px!important;max-height:72px!important;object-fit:contain!important;object-position:left center!important}
+footer .foundation-logo-footer{width:min(300px,100%)!important;max-width:300px!important;overflow:hidden!important}
+footer .foundation-logo-footer>img{display:block!important;width:100%!important;height:auto!important;max-width:300px!important;max-height:120px!important;object-fit:contain!important}
+@media(max-width:620px){header nav.wrap>a.logo.foundation-logo{width:165px!important;height:58px!important}header nav.wrap>a.logo.foundation-logo>img{max-height:58px!important}}
