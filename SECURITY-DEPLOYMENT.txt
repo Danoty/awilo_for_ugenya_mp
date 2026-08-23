@@ -1,0 +1,18 @@
+SECURITY DEPLOYMENT NOTES
+
+The website contains browser-level security metadata and a responsible-disclosure page.
+
+The included _headers file is recognized by hosts such as Cloudflare Pages and Netlify. GitHub Pages does not apply custom response headers from this file. If GitHub Pages remains the host, configure equivalent headers through a reverse proxy/CDN such as Cloudflare after the domain is active.
+
+Required production protections:
+- HTTPS enforced
+- HSTS enabled only after HTTPS is proven stable
+- Content Security Policy
+- X-Content-Type-Options: nosniff
+- Clickjacking protection
+- Strict referrer policy
+- Restricted browser permissions
+- Service worker served with no-cache
+- Static assets cached with controlled expiry
+
+Never store banking passwords, payment-provider secret keys, API secrets or donor identity documents in this repository.

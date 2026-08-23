@@ -1,0 +1,22 @@
+FINAL PRODUCTION RELEASE — 23 AUGUST 2026
+
+- Complete Foundation and AWILO campaign website.
+- Verified KCB Bondo bank-transfer details displayed for both initiatives.
+- Direct-transfer preparation workflow with initiative, amount, purpose, FND/CMP reference, lawful-source declaration, copy action and proof-of-payment acknowledgement links.
+- International giving section with direct SWIFT instructions, KCB-listed remittance partners, country/currency verification guidance and fraud warnings.
+- Foundation programme, grant, in-kind, volunteer and partnership contribution options.
+- Separate compliant campaign-contribution enquiry process.
+- Recent engagements page and campaign gallery.
+- Fourteen current engagement photographs and three unique current videos supplied on 22 August 2026; the duplicate fourth video was omitted.
+- Privacy, safeguarding, governance, accessibility and security-contact information.
+- Public security and fraud-prevention centre, responsible-disclosure contact and anti-impersonation guidance.
+- Production security-header policy for compatible hosts/CDNs, including CSP, anti-framing, MIME protection, referrer controls and permissions restrictions.
+- Canonical URLs, social-sharing metadata, sitemap and robots configuration.
+- Mobile navigation, keyboard support, consent notices and responsive layouts.
+- Final premium visual system across every page: refined typography, spacing, cards, imagery, calls to action, forms, mobile menus and accessible reduced-motion behaviour.
+- Installable web manifest, offline fallback and cache lifecycle.
+- GitHub Pages custom-domain configuration.
+- No third-party payment script, card collection or sensitive banking credential collection.
+- Publication checklist and deployment instructions.
+
+No mobile-money number, event, endorsement, beneficiary total or impact statistic was invented. The supplied KCB account is recorded as authorised for both initiatives.

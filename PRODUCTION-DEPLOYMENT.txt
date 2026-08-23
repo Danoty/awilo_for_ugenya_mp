@@ -1,0 +1,43 @@
+PRODUCTION DEPLOYMENT — WILLIS OUMA ONDIEK FOUNDATION + AWILO CAMPAIGN
+
+PUBLIC DOMAIN
+willisondiekfoundation.org
+
+GITHUB PAGES
+1. Upload the contents of this ZIP to the repository root.
+2. Keep CNAME and .nojekyll in the repository root.
+3. In repository Settings > Pages, publish from the main branch/root.
+4. Confirm the custom domain and enable Enforce HTTPS.
+5. Wait for DNS and HTTPS activation, then visit every primary page.
+6. Put the domain behind Cloudflare (or deploy to a host that supports _headers) and apply SECURITY-DEPLOYMENT.txt. GitHub Pages does not apply the _headers file itself.
+
+POST-DEPLOYMENT CHECKS
+- Home: https://willisondiekfoundation.org/
+- Campaign: https://willisondiekfoundation.org/campaign/
+- Foundation: https://willisondiekfoundation.org/foundation/
+- Donate: https://willisondiekfoundation.org/contribute.html
+- Engagements: https://willisondiekfoundation.org/engagements.html
+- Privacy: https://willisondiekfoundation.org/privacy.html
+- Security: https://willisondiekfoundation.org/security.html
+- Sitemap: https://willisondiekfoundation.org/sitemap.xml
+- Security contact: https://willisondiekfoundation.org/.well-known/security.txt
+
+TEST AFTER UPLOAD
+- KCB account shows as: Willis Ondiek / 1250748712 / KCB Bank Bondo Branch.
+- Copy-account button works.
+- Foundation email links open info@willisondiekfoundation.org.
+- WhatsApp links open the intended verified number.
+- Campaign and Foundation navigation remain separate.
+- PDFs, photographs and both videos load.
+- Mobile menus open and close.
+- Volunteer form opens a prepared email and does not store information.
+- Offline fallback becomes available after the first successful visit.
+- Social previews use the correct campaign or Foundation image.
+- Response headers pass the checks in SECURITY-DEPLOYMENT.txt.
+
+IMPORTANT OPERATIONAL REQUIREMENTS
+- The confirmed KCB account receives both Foundation and campaign contributions; FND and CMP references and ledgers remain separate.
+- Do not redirect campaign contributions into the Foundation account.
+- Issue acknowledgements and maintain appropriate contribution records.
+- Update events and engagement captions only with verified dates, locations and permissions.
+- Replace this package only with a fully verified newer release.
