@@ -1,8 +1,8 @@
 {
   "id": "./",
-  "name": "Willis Ouma Ondiek Foundation",
-  "short_name": "WOO Foundation",
-  "description": "Official Willis Ouma Ondiek Foundation website with a separate AWILO for Ugenya MP campaign section.",
+  "name": "Willis Ondiek Foundation",
+  "short_name": "WO Foundation",
+  "description": "Official Willis Ondiek Foundation website with a separate AWILO for Ugenya MP campaign section.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

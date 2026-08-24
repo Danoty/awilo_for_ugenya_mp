@@ -1,11 +1,18 @@
 FINAL PRODUCTION RELEASE — 23 AUGUST 2026
 
+BRANDING AND DONATION UPDATE — 24 AUGUST 2026
+- Foundation name standardised to Willis Ondiek Foundation across every page, metadata field, form and application manifest.
+- New Willis Ondiek Foundation logo installed; Ouma removed from the Foundation name while the emblem, palette and tagline remain intact.
+- Public-facing donation terminology standardised to Donate/donation.
+- Donate page is now the primary route, while the previous address remains available for compatibility.
+- Translator repaired and centralised across all pages with English, Kiswahili, Dholuo, French, Arabic, Spanish, German, Portuguese, Hindi and Chinese options.
+
 - Complete Foundation and AWILO campaign website.
 - Verified KCB Bondo bank-transfer details displayed for both initiatives.
 - Direct-transfer preparation workflow with initiative, amount, purpose, FND/CMP reference, lawful-source declaration, copy action and proof-of-payment acknowledgement links.
 - International giving section with direct SWIFT instructions, KCB-listed remittance partners, country/currency verification guidance and fraud warnings.
-- Foundation programme, grant, in-kind, volunteer and partnership contribution options.
-- Separate compliant campaign-contribution enquiry process.
+- Foundation programme, grant, in-kind, volunteer and partnership donation options.
+- Separate compliant campaign-donation enquiry process.
 - Recent engagements page and campaign gallery.
 - Fourteen current engagement photographs and three unique current videos supplied on 22 August 2026; the duplicate fourth video was omitted.
 - Dynamic gallery filters, keyboard-accessible image lightbox, next/previous navigation and automatic pausing of other videos during playback.

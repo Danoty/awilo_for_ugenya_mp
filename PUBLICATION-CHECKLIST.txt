@@ -1,7 +1,7 @@
 FINAL PUBLICATION CHECKLIST
 
 Technical work completed:
-- Added a separated donation/contribution pathway with Foundation, campaign, in-kind, partnership and volunteer options.
+- Added a separated donation/donation pathway with Foundation, campaign, in-kind, partnership and volunteer options.
 - Added a recent-engagements page and a companion photo pack for programme partners.
 - Multi-page Foundation and campaign architecture
 - Mobile navigation enhancement
@@ -14,7 +14,7 @@ Technical work completed:
 - Local-link, script and route verification
 
 REAL-WORLD APPROVAL STILL REQUIRED:
-1. Confirm that info@willisondiekfoundation.org and all four published telephone numbers are official. The KCB Bondo account supplied on 22 August 2026 is confirmed for both Foundation and campaign contributions; maintain separate FND and CMP ledgers.
+1. Confirm that info@willisondiekfoundation.org and all four published telephone numbers are official. The KCB Bondo account supplied on 22 August 2026 is confirmed for both Foundation and campaign donations; maintain separate FND and CMP ledgers.
 2. Approve the candidate biography, titles, qualifications and manifesto wording.
 3. Confirm Foundation registration, governing body, safeguarding lead and privacy/data contact.
 4. Confirm publication permission and credits for every photograph and video, especially images involving children.

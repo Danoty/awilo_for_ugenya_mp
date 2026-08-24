@@ -15,7 +15,7 @@ POST-DEPLOYMENT CHECKS
 - Home: https://willisondiekfoundation.org/
 - Campaign: https://willisondiekfoundation.org/campaign/
 - Foundation: https://willisondiekfoundation.org/foundation/
-- Donate: https://willisondiekfoundation.org/contribute.html
+- Donate: https://willisondiekfoundation.org/donate.html
 - Engagements: https://willisondiekfoundation.org/engagements.html
 - Privacy: https://willisondiekfoundation.org/privacy.html
 - Security: https://willisondiekfoundation.org/security.html
@@ -36,8 +36,8 @@ TEST AFTER UPLOAD
 - Response headers pass the checks in SECURITY-DEPLOYMENT.txt.
 
 IMPORTANT OPERATIONAL REQUIREMENTS
-- The confirmed KCB account receives both Foundation and campaign contributions; FND and CMP references and ledgers remain separate.
-- Do not redirect campaign contributions into the Foundation account.
-- Issue acknowledgements and maintain appropriate contribution records.
+- The confirmed KCB account receives both Foundation and campaign donations; FND and CMP references and ledgers remain separate.
+- Do not redirect campaign donations into the Foundation account.
+- Issue acknowledgements and maintain appropriate donation records.
 - Update events and engagement captions only with verified dates, locations and permissions.
 - Replace this package only with a fully verified newer release.
