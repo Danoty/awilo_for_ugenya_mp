@@ -5,6 +5,7 @@
   --radius-sm:10px;--radius:18px;--radius-lg:28px;
   --ease:cubic-bezier(.2,.75,.25,1)
 }
+.translation-state{font-size:.61rem;font-weight:800;color:#496057;white-space:nowrap}
 html{font-size:100%;scroll-padding-top:104px}
 body{background:var(--surface-soft);font-feature-settings:"kern" 1,"liga" 1;text-rendering:optimizeLegibility}
 ::selection{background:#d6a62a;color:#091d17}
@@ -98,7 +99,7 @@ footer,.page-footer{background:linear-gradient(135deg,#071711,#0d2b22)}
   .hero-tag{display:none}
 }
 
-/* International contribution routes */
+/* International donation routes */
 .international-giving{margin-top:72px;padding:clamp(28px,5vw,54px);border:1px solid var(--line);border-radius:var(--radius-lg);background:linear-gradient(145deg,#f7f2e7,#fff);box-shadow:var(--shadow-lg)}
 .international-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:28px;margin-bottom:30px}
 .international-heading h2{margin:.6rem 0 .25rem;font:400 clamp(2.4rem,5vw,4rem)/1 'DM Serif Display',Georgia,serif;color:#173f34}
@@ -154,8 +155,8 @@ footer,.page-footer{background:linear-gradient(135deg,#071711,#0d2b22)}
 .lightbox-close:hover,.lightbox-nav:hover{background:#ffd400;transform:scale(1.05)}
 @media(max-width:760px){.gallery-toolbar{align-items:flex-start;flex-direction:column}.gallery-filters{justify-content:flex-start}.media-lightbox figcaption{padding:12px 56px}.lightbox-nav{width:42px;height:42px}.lightbox-nav.previous{left:7px}.lightbox-nav.next{right:7px}}
 
-/* Always-visible contribution access */
-.contribute-nav,.contribution-button{background:#ffd400!important;color:#092016!important;border-color:#ffd400!important;font-weight:900!important}
-.contribute-nav:hover,.contribution-button:hover{background:#fff!important;color:#0b4d2b!important}
-.mobile-contribute{display:none;position:fixed;right:14px;bottom:14px;z-index:90;min-height:50px;padding:14px 20px;border-radius:999px;background:#ffd400;color:#092016;text-decoration:none;text-transform:uppercase;font-size:.76rem;font-weight:900;letter-spacing:.07em;box-shadow:0 14px 35px rgba(0,0,0,.28)}
-@media(max-width:860px){.mobile-contribute{display:inline-flex;align-items:center;justify-content:center}.campaign-theme .mobile-contribute{display:inline-flex}}
+/* Always-visible donation access */
+.donate-nav,.donation-button{background:#ffd400!important;color:#092016!important;border-color:#ffd400!important;font-weight:900!important}
+.donate-nav:hover,.donation-button:hover{background:#fff!important;color:#0b4d2b!important}
+.mobile-donate{display:none;position:fixed;right:14px;bottom:14px;z-index:90;min-height:50px;padding:14px 20px;border-radius:999px;background:#ffd400;color:#092016;text-decoration:none;text-transform:uppercase;font-size:.76rem;font-weight:900;letter-spacing:.07em;box-shadow:0 14px 35px rgba(0,0,0,.28)}
+@media(max-width:860px){.mobile-donate{display:inline-flex;align-items:center;justify-content:center}.campaign-theme .mobile-donate{display:inline-flex}}

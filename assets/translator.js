@@ -1,0 +1,12 @@
+(()=>{
+  'use strict';
+  if(document.querySelector('#site-language'))return;
+  const languages=[['en','English'],['sw','Kiswahili'],['luo','Dholuo'],['fr','French'],['ar','Arabic'],['es','Spanish'],['de','German'],['pt','Portuguese'],['hi','Hindi'],['zh-CN','Chinese']];
+  const host=document.createElement('div');host.id='google_translate_element';host.setAttribute('aria-hidden','true');document.body.append(host);
+  const control=document.createElement('div');control.className='language-control notranslate';control.setAttribute('translate','no');control.innerHTML='<label for="site-language">Language</label><select id="site-language" aria-label="Translate this website"></select><span class="translation-state" role="status" aria-live="polite">Ready</span>';document.body.append(control);
+  const select=control.querySelector('select');const state=control.querySelector('.translation-state');languages.forEach(([code,name])=>select.add(new Option(name,code)));
+  const apply=(code,attempt=0)=>{const googleSelect=document.querySelector('.goog-te-combo');if(!googleSelect&&attempt<60){state.textContent='Loading…';setTimeout(()=>apply(code,attempt+1),250);return}if(!googleSelect){state.textContent='Internet required';select.value='en';return}googleSelect.value=code==='en'?'':code;googleSelect.dispatchEvent(new Event('change',{bubbles:true}));state.textContent=code==='en'?'English':select.selectedOptions[0].textContent;try{localStorage.setItem('preferred-site-language',code)}catch{}};
+  select.addEventListener('change',()=>apply(select.value));
+  window.googleTranslateElementInit=()=>{if(!window.google?.translate?.TranslateElement){state.textContent='Unavailable';return}new window.google.translate.TranslateElement({pageLanguage:'en',includedLanguages:languages.filter(([code])=>code!=='en').map(([code])=>code).join(','),autoDisplay:false},host.id);let preferred='en';try{preferred=localStorage.getItem('preferred-site-language')||'en'}catch{}select.value=preferred;state.textContent='Ready';if(preferred!=='en')apply(preferred)};
+  if(!document.querySelector('script[data-site-translator]')){const script=document.createElement('script');script.dataset.siteTranslator='true';script.src='https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';script.async=true;script.referrerPolicy='no-referrer-when-downgrade';script.addEventListener('error',()=>{state.textContent='Internet required'});document.head.append(script)}
+})();
