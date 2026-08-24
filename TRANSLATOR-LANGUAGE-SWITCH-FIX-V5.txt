@@ -1,0 +1,5 @@
+TRANSLATOR LANGUAGE SWITCH FIX V5
+
+Changing from one translated language to another now starts again from the matching original page on https://willisondiekfoundation.org. This prevents unsupported nested Google Translate URLs.
+
+Upload the complete V5 package and overwrite existing files. After deployment, return to the original website address before testing.
