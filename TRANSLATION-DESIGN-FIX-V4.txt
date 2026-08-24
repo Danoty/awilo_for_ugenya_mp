@@ -1,0 +1,5 @@
+TRANSLATION DESIGN FIX V4
+
+The translated Google proxy is now permitted to load styles, scripts, fonts and videos from https://willisondiekfoundation.org. Permission is limited to the site's own verified domain.
+
+Upload and overwrite the complete package in the GitHub repository. Wait for the Pages workflow, then reopen the website and select a language again.
