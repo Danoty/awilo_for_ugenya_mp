@@ -1,0 +1,7 @@
+TRANSLATOR FIX V3
+
+Every page now loads assets/translator-v3.js. The new filename bypasses the old browser, GitHub Pages and service-worker cache.
+
+After uploading this complete package to the main branch, wait for the GitHub Pages workflow to finish. Then close the old tab and reopen the public website. If necessary, press Ctrl+F5 once.
+
+The translator requires a public HTTPS address and internet access. It cannot translate a local file:/// address.
