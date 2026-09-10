@@ -1,4 +1,4 @@
-/* Final publication visual system — Foundation and AWILO campaign */
+/* Final publication visual system — Foundation and Foundation foundation */
 :root{
   --surface:#fffdf8;--surface-soft:#f5f1e8;--line:rgba(18,56,46,.14);
   --shadow-sm:0 8px 24px rgba(9,29,23,.08);--shadow-lg:0 24px 70px rgba(9,29,23,.16);
@@ -8,7 +8,7 @@
 .translation-state{font-size:.61rem;font-weight:800;color:#496057;white-space:nowrap}
 html{font-size:100%;scroll-padding-top:104px}
 body{background:var(--surface-soft);font-feature-settings:"kern" 1,"liga" 1;text-rendering:optimizeLegibility}
-::selection{background:#d6a62a;color:#091d17}
+::sevent{background:#d6a62a;color:#091d17}
 img{max-width:100%}
 a,button,input,select,textarea{transition:border-color .2s var(--ease),background-color .2s var(--ease),color .2s var(--ease),box-shadow .2s var(--ease),transform .2s var(--ease)}
 a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #f4bd2d;outline-offset:3px}
@@ -45,7 +45,7 @@ header,.page-header{box-shadow:0 1px 0 rgba(9,29,23,.08),0 10px 35px rgba(9,29,2
 @media (hover:hover){.page-card:hover,.publication-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:rgba(214,166,42,.45)}}
 .page-note{border-radius:0 var(--radius-sm) var(--radius-sm) 0;box-shadow:var(--shadow-sm)}
 .page-cta{position:relative;overflow:hidden;background:linear-gradient(135deg,#e0b43f,#cf9720)}
-.campaign-theme .page-cta{background:linear-gradient(135deg,#ffe45b,#ffd400)}
+.foundation-theme .page-cta{background:linear-gradient(135deg,#ffe45b,#ffd400)}
 .page-cta:after{content:"";position:absolute;width:320px;height:320px;border:58px solid rgba(255,255,255,.16);border-radius:50%;right:-120px;top:-145px;pointer-events:none}
 .page-cta-inner{position:relative;z-index:1}
 .page-button{align-items:center;justify-content:center;min-height:48px;padding:14px 22px}
@@ -159,4 +159,4 @@ footer,.page-footer{background:linear-gradient(135deg,#071711,#0d2b22)}
 .donate-nav,.donation-button{background:#ffd400!important;color:#092016!important;border-color:#ffd400!important;font-weight:900!important}
 .donate-nav:hover,.donation-button:hover{background:#fff!important;color:#0b4d2b!important}
 .mobile-donate{display:none;position:fixed;right:14px;bottom:14px;z-index:90;min-height:50px;padding:14px 20px;border-radius:999px;background:#ffd400;color:#092016;text-decoration:none;text-transform:uppercase;font-size:.76rem;font-weight:900;letter-spacing:.07em;box-shadow:0 14px 35px rgba(0,0,0,.28)}
-@media(max-width:860px){.mobile-donate{display:inline-flex;align-items:center;justify-content:center}.campaign-theme .mobile-donate{display:inline-flex}}
+@media(max-width:860px){.mobile-donate{display:inline-flex;align-items:center;justify-content:center}.foundation-theme .mobile-donate{display:inline-flex}}

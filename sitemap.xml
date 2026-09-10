@@ -1,23 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://willisondiekfoundation.org/</loc><lastmod>2026-08-21</lastmod></url>
-  <url><loc>https://willisondiekfoundation.org/foundation/</loc><lastmod>2026-08-21</lastmod></url>
-  <url><loc>https://willisondiekfoundation.org/foundation/about.html</loc><lastmod>2026-08-21</lastmod></url>
-  <url><loc>https://willisondiekfoundation.org/foundation/programmes.html</loc><lastmod>2026-08-21</lastmod></url>
-  <url><loc>https://willisondiekfoundation.org/foundation/get-involved.html</loc><lastmod>2026-08-21</lastmod></url>
-  <url><loc>https://willisondiekfoundation.org/governance.html</loc><lastmod>2026-08-21</lastmod></url>
-  <url><loc>https://willisondiekfoundation.org/safeguarding.html</loc><lastmod>2026-08-21</lastmod></url>
-  <url><loc>https://willisondiekfoundation.org/privacy.html</loc><lastmod>2026-08-21</lastmod></url>
-  <url><loc>https://willisondiekfoundation.org/accessibility.html</loc><lastmod>2026-08-21</lastmod></url>
-  <url><loc>https://willisondiekfoundation.org/security.html</loc><lastmod>2026-08-23</lastmod></url>
-  <url><loc>https://willisondiekfoundation.org/campaign/</loc><lastmod>2026-08-21</lastmod></url>
-  <url><loc>https://willisondiekfoundation.org/campaign/candidate.html</loc><lastmod>2026-08-21</lastmod></url>
-  <url><loc>https://willisondiekfoundation.org/campaign/priorities.html</loc><lastmod>2026-08-21</lastmod></url>
-  <url><loc>https://willisondiekfoundation.org/campaign/manifesto.html</loc><lastmod>2026-08-21</lastmod></url>
-  <url><loc>https://willisondiekfoundation.org/campaign/community.html</loc><lastmod>2026-08-21</lastmod></url>
-  <url><loc>https://willisondiekfoundation.org/campaign/updates.html</loc><lastmod>2026-08-21</lastmod></url>
-  <url><loc>https://willisondiekfoundation.org/campaign/events.html</loc><lastmod>2026-08-21</lastmod></url>
-  <url><loc>https://willisondiekfoundation.org/campaign/gallery.html</loc><lastmod>2026-08-21</lastmod></url>
-  <url><loc>https://willisondiekfoundation.org/donate.html</loc><lastmod>2026-08-21</lastmod></url>
-  <url><loc>https://willisondiekfoundation.org/engagements.html</loc><lastmod>2026-08-21</lastmod></url>
+  <url><loc>https://willisondiekfoundation.org/</loc></url>
+  <url><loc>https://willisondiekfoundation.org/foundation/about.html</loc></url>
+  <url><loc>https://willisondiekfoundation.org/foundation/programmes.html</loc></url>
+  <url><loc>https://willisondiekfoundation.org/foundation/get-involved.html</loc></url>
+  <url><loc>https://willisondiekfoundation.org/donate.html</loc></url>
+  <url><loc>https://willisondiekfoundation.org/governance.html</loc></url>
+  <url><loc>https://willisondiekfoundation.org/safeguarding.html</loc></url>
+  <url><loc>https://willisondiekfoundation.org/privacy.html</loc></url>
+  <url><loc>https://willisondiekfoundation.org/accessibility.html</loc></url>
+  <url><loc>https://willisondiekfoundation.org/security.html</loc></url>
 </urlset>
